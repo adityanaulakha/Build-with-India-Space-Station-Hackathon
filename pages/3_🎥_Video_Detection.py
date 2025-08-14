@@ -53,7 +53,7 @@ if uploaded_video is not None:
             cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        stframe.image(frame, channels="RGB", use_column_width=True)
+        stframe.image(frame, channels="RGB", use_contanier_width=True)
 
     cap.release()
     st.success("Video Detection Finished")
